@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stima Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: #0056b3;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #003d80;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #0056b3;
+      margin-bottom: 20px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      color: #0056b3;
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    form input, form textarea, form button, form select {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #0056b3;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    form button:hover {
+      background: #004080;
+    }
+    footer {
+      background: #003d80;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>⚡ Stima Services</h1>
+    <p>Your trusted platform for booking reliable electrical solutions and professional services</p>
+  </header>
+  
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#process">How It Works</a>
+    <a href="#why">Why Choose Us</a>
+    <a href="#booking">Book Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Stima Services</h2>
+    <p>At Stima Services, we pride ourselves on being the go-to solution for all your electrical needs. Whether it’s an urgent repair, a new installation, or a scheduled maintenance check, we connect you with trusted, certified electricians who guarantee safe, efficient, and reliable service. Booking a service is quick, transparent, and tailored to meet your exact needs.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Founded in 2025, Stima Services was built to simplify access to professional electrical services across the country. We aim to eliminate the frustration of unreliable technicians by offering a platform where customers can easily request certified and vetted professionals. Our mission is to ensure every home, office, and industry has access to safe and efficient electrical solutions.</p>
+    <p>We not only focus on fixing problems but also on providing preventive services and expert consultation to help clients avoid future risks.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Electrical Repairs</h3>
+        <p>From faulty sockets to damaged wiring, our electricians quickly and safely resolve all repair issues with guaranteed safety standards.</p>
+      </div>
+      <div class="card">
+        <h3>New Installations</h3>
+        <p>We provide installation of electrical appliances, lighting systems, solar systems, and heavy-duty industrial equipment with professional care.</p>
+      </div>
+      <div class="card">
+        <h3>Emergency Services</h3>
+        <p>Available 24/7 to respond to urgent power outages, electrical surges, and safety hazards at home or at the workplace.</p>
+      </div>
+      <div class="card">
+        <h3>Preventive Maintenance</h3>
+        <p>Scheduled check-ups for offices, factories, and homes to ensure systems are efficient and safe from potential risks.</p>
+      </div>
+      <div class="card">
+        <h3>Energy Consultation</h3>
+        <p>Expert advice on energy-saving solutions, solar installations, and modern technology to cut costs and promote sustainability.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Browse services and select the one that matches your need.</li>
+      <li>Fill out the booking form with details about your issue.</li>
+      <li>Our system matches you with the nearest certified electrician.</li>
+      <li>Get confirmation and estimated cost before service delivery.</li>
+      <li>Sit back and let our professionals handle the job safely and efficiently.</li>
+    </ol>
+  </section>
+
+  <section id="why">
+    <h2>Why Choose Stima Services?</h2>
+    <ul>
+      <li>✔ Certified and vetted professionals with years of experience</li>
+      <li>✔ Fast response time and emergency coverage 24/7</li>
+      <li>✔ Transparent pricing with no hidden costs</li>
+      <li>✔ Wide range of services from minor repairs to major installations</li>
+      <li>✔ Focus on safety, sustainability, and customer satisfaction</li>
+    </ul>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Service</h2>
+    <form>
+      <input type="text" placeholder="Your Full Name" required>
+      <input type="email" placeholder="Your Email Address" required>
+      <input type="tel" placeholder="Your Phone Number" required>
+      <select required>
+        <option value="">Select Service</option>
+        <option>Electrical Repair</option>
+        <option>New Installation</option>
+        <option>Emergency Service</option>
+        <option>Preventive Maintenance</option>
+        <option>Energy Consultation</option>
+      </select>
+      <textarea rows="5" placeholder="Describe your issue in detail" required></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@stimaservices.com</p>
+    <p>Phone: +254 720 042 008</p>
+    <p>Address: Nairobi, Kenya - Stima Services HQ</p>
+    <p>Follow us on social media for updates and offers.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Stima Services. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
